@@ -8,6 +8,27 @@ public class TD_MassAI : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] { 
+			"Core", 
+			"CoreUObject", 
+			"Engine", 
+			"InputCore", 
+			"EnhancedInput",
+			
+			"MassRepresentation",
+			"MassEntity",
+			"MassCommon",
+			"MassNavigation",
+			"StructUtils",
+			"MassMovement",
+			"NavigationSystem",
+			"AIModule",
+			"MassAIBehavior",
+			"StateTreeModule",
+			"GameplayTags",
+			"SmartObjectsModule",
+			"MassSmartObjects",
+			"MassSignals",
+		});
 	}
 }

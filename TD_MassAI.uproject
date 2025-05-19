@@ -7,7 +7,14 @@
 		{
 			"Name": "TD_MassAI",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"MassRepresentation",
+				"Engine",
+				"MassSpawner",
+				"MassSmartObjects",
+				"MassEntity"
+			]
 		}
 	],
 	"Plugins": [
@@ -17,6 +24,22 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "MassAI",
+			"Enabled": true
+		},
+		{
+			"Name": "MassCrowd",
+			"Enabled": true
+		},
+		{
+			"Name": "MassEntity",
+			"Enabled": true
+		},
+		{
+			"Name": "MassGameplay",
+			"Enabled": true
 		}
 	]
 }
