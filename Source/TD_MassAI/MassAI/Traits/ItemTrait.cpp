@@ -14,6 +14,7 @@ void UItemTrait::BuildTemplate(FMassEntityTemplateBuildContext& BuildContext, co
 }
 
 UItemProcessor::UItemProcessor()
+	: EntityQuery(*this)
 {
 }
 
@@ -98,4 +99,5 @@ void UItemInitializerProcessor::Initialize(UObject& Owner)
 	Super::Initialize(Owner);
 
 	BuildingSubsystem = Owner.GetWorld()->GetSubsystem<UBuildingSubsystem>();
+	EntityQuery.RegisterWithProcessor(*this);
 }

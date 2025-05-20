@@ -20,6 +20,7 @@ void UAgentTrait::BuildTemplate(FMassEntityTemplateBuildContext& BuildContext, c
 }
 
 UAgentInitializer::UAgentInitializer()
+	: EntityQuery(*this)
 {
 	ObservedType = FAgentFragment::StaticStruct();
 	Operation = EMassObservedOperation::Add;
